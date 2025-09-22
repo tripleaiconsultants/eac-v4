@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Επικοινωνία | E.A.C Insurance Agencies & Consultants</title>
+  <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+<script src="https://files.bpcontent.cloud/2025/08/31/06/20250831060030-72DVBA9B.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Section wrapper */
+    .contact-wrapper {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    /* Corner border effect */
+    .corner-box {
+      position: relative;
+      padding: 40px;
+    }
+    .corner-box::before,
+    .corner-box::after,
+    .corner-box div::before,
+    .corner-box div::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #C19A6B;
+      opacity: 1;
+      transform: scale(1);
+    }
+    /* Top left */
+    .corner-box::before {
+      top: 0;
+      left: 0;
+      border-right: none;
+      border-bottom: none;
+    }
+    /* Top right */
+    .corner-box::after {
+      top: 0;
+      right: 0;
+      border-left: none;
+      border-bottom: none;
+    }
+    /* Bottom left */
+    .corner-box div::before {
+      bottom: 0;
+      left: 0;
+      border-right: none;
+      border-top: none;
+    }
+    /* Bottom right */
+    .corner-box div::after {
+      bottom: 0;
+      right: 0;
+      border-left: none;
+      border-top: none;
+    }
+
+    /* Contact layout */
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center; /* vertically centers the columns */
+    }
+
+    .contact-info {
+      font-size: 18px;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertically center content */
+      height: 100%;
+      margin-left: 80px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center; /* icon and text aligned */
+      margin-bottom: 12px;
+    }
+
+    .contact-item i {
+      color: #C19A6B;
+      margin-right: 12px;
+      font-size: 20px;
+    }
+
+    .contact-info a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #C19A6B;
+    }
+
+    /* Social icons aligned horizontally in line with contact info */
+    .contact-info .social-icons {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      color: #C19A6B;
+      font-size: 22px;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icons a:hover {
+      color: #a87d4f;
+    }
+
+    
+    @media (max-width: 900px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+      .contact-info {
+        justify-content: flex-start; /* top align on mobile */
+        margin-bottom: 30px;
+      }
+      .contact-info .social-icons {
+        justify-content: flex-start;
+      }
+    }
+
+.contact-icons-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* space between icons */
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.big-icon-button {
+  color: #C19A6B;
+  font-size: 120px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.big-icon-button:hover {
+  transform: scale(1.1);
+  color: #a87d4f;
+}
+
+
+
+    
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top-bar">
+      <div class="logo-container">
+    <a href="main.html">
+        <img src="assets/logoCamelv2.png" alt="E.A.C Insurance Agencies & Consultants logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    </a>
+</div>
+      <div class="slogan">
+        <span class="slogan-part1">Διαφορετικοί γιατί</span><br>
+        <span class="slogan-part2">νοιαζόμαστε</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="main.html"><i class="fas fa-home"></i> Αρχική</a></li>
+        <li><a href="auto.html"><i class="fas fa-car"></i> Αυτοκίνητο</a></li>
+        <li><a href="health.html"><i class="fas fa-heartbeat"></i> Υγεία</a></li>
+        <li><a href="life.html"><i class="fas fa-house-user"></i> Κατοικία</a></li>
+        <li><a href="business.html"><i class="fas fa-briefcase"></i> Επιχείρηση</a></li>
+        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section with Decorative Corners -->
+  <section class="contact-wrapper">
+    <div class="corner-box">
+      <div>
+        <div class="contact-section">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Επικοινωνήστε μαζί μας</h2>
+            <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+35796660113">+357 96660113</a></div>
+            <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:e.a.c.insurances@outlook.com">e.a.c.insurances@outlook.com</a></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i>Λεμεσός – Εξυπηρέτηση σε όλη την Κύπρο</div>
+            <div class="contact-item"><i class="fas fa-clock"></i>Δευτ-Παρ 8ΠΜ-6ΜΜ | Επείγοντα: 24/7</div>
+          </div>
+
+         <!-- Contact Icons Container -->
+<div class="contact-form contact-icons-box">
+  <a href="https://wa.me/35796660113" target="_blank" class="big-icon-button" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:e.a.c.insurances@outlook.com" class="big-icon-button" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logoCamelv2.png" alt="E.A.C - Insurance Broker logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">Σχετικά με την E.A.C</a>
+                <a href="contact.html">Επικοινωνία</a>
+                <a href="#">Πολιτική Απορρήτου</a>
+                <a href="#">Συχνές Ερωτήσεις</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/eacinsurance/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/andros.eacinsurance/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/andros-panayiotou-a6392483?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.link/r895s2"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            
+            <div style="text-align: center; margin: 20px 0; color: #c9c9c9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;">
+            <p><strong>Τηλ:</strong> +357 96660113</p>
+            <p><strong>Γραφείο:</strong> Λεμεσός | <strong>Εξυπηρέτηση:</strong> Όλη η Κύπρος</p>
+            <p><strong>Ώρες:</strong> Δευτ-Παρ 8ΠΜ-6ΜΜ | <strong>Επείγοντα:</strong> 24/7</p>
+        </div>
+        
+        <p class="copyright">© 2025 TripleAI Consultants. Με την επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
