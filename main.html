@@ -599,20 +599,24 @@
             }
         });
     </script>
-  <script>
-    // Only auto-open chatbot on first visit
-    window.botpress.on('webchat:ready', () => {
-        // Check if user has seen the chatbot before
-        if (!localStorage.getItem('chatbotOpened')) {
-            setTimeout(() => {
-                window.botpress.open();
-                // Mark as opened
-                localStorage.setItem('chatbotOpened', 'true');
-            }, 1000);
-        }
-    });
-</script>
+    </script>
     
+    <!-- Add this at the very end, after all other scripts -->
+    <script>
+        // Wait a bit for Botpress to fully load
+        setTimeout(() => {
+            if (window.botpress && window.botpress.on) {
+                window.botpress.on('webchat:ready', () => {
+                    setTimeout(() => {
+                        window.botpress.open();
+                    }, 500);
+                });
+            }
+        }, 300);
+    </script>
+    
+</body>
+</html>
 </body>
 
 </html>
